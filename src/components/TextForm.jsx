@@ -81,7 +81,7 @@ const TextForm = (props) => {
 
             <div className="container  py-3" style={{ color: props.mode === 'dark' ? 'white' : "black" }}>
                 <h2>Your Text Summary</h2>
-                <p><b>Words: </b>{text.split(" ").length} <b className='px-2'>Characters:</b>{text.length}</p>
+                <p><b>Words: </b>{text.charAt(0) === "" ? "0" : text.split(" ").length} <b className='px-2'>Characters:</b>{text.length}</p>
                 <p><b>Reading Time</b>{0.008 * text.split(" ").length} w/m</p>
             </div>
 

@@ -4,20 +4,20 @@ export default function About() {
     const [text, setText] = useState("Dark");
     const [style, setStyle] = useState({
         backgroundColor: "white",
-        color: "black"
+        color: "#242743"
     });
 
     const handleToggleButton = () => {
-        if (style.color === "black") {
+        if (style.color === "#242743") {
             setStyle({
-                backgroundColor: "black",
+                backgroundColor: "#242743",
                 color: "white"
             })
             setText("Light");
         } else {
             setStyle({
                 backgroundColor: "white",
-                color: "black"
+                color: "#242743"
             })
             setText("Dark");
         }
