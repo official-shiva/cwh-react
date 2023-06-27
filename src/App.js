@@ -4,13 +4,13 @@ import './App.css';
 import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import About from './components/About';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
-import ErrorPage from './components/ErrorPage';
+// import About from './components/About';
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route
+// } from "react-router-dom";
+// import ErrorPage from './components/ErrorPage';
 
 
 function App() {
@@ -44,16 +44,17 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navbar title={"TextUtils"} mode={mode} toggleMode={toggleMode} />
-        <Alert alert={alert} />
+      {/* <Router> */}
+      <Navbar title={"TextUtils"} mode={mode} toggleMode={toggleMode} />
+      <Alert alert={alert} />
 
-        <Routes>
-          <Route exact path="/" element={<TextForm showAlert={showAlert} heading={"Enter your text bellow"} mode={mode} />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/*" element={<ErrorPage mode={mode} />} />
-        </Routes>
-      </Router>
+      {/* <Routes> */}
+      {/* <Route exact path="/" element={<TextForm showAlert={showAlert} heading={"Enter your text bellow"} mode={mode} />} /> */}
+      {/* <Route exact path="/about" element={<About />} /> */}
+      {/* <Route exact path="/*" element={<ErrorPage mode={mode} />} /> */}
+      {/* </Routes> */}
+      {/* </Router> */}
+      <TextForm showAlert={showAlert} heading={"Enter your text bellow"} mode={mode} />
     </>
   );
 }
